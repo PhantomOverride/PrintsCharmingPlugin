@@ -36,7 +36,11 @@ function doPrint(){
 					if (xhr.status === 200) {
 					// Request was successful
 					var response = xhr.responseText;
-					document.getElementById("results").value = response;
+					res = JSON.parse(response);
+					var matches = res.map(obj => obj.component);
+					const uniquematches = [...new Set(matches)];
+
+					document.getElementById("results").value = uniquematches.join("\n");;
 				} else {
 					// Request failed
 					console.error("Request failed. Status code: " + xhr.status);
