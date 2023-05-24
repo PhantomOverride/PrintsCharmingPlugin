@@ -1,0 +1,26 @@
+body {
+  width: 400px;
+  padding:10px;
+}
+
+textarea {
+	width:90%;
+	height:8em;
+}
+
+button {
+	margin-top:0.5em;
+	width:90%;
+	height:3em;
+}
+
+.highlight {
+	color:green;
+	border:1px solid green;
+}
+
+.buttongroup{}
+
+.checkboxgroup{
+	padding-top:1em;
+}
